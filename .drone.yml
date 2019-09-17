@@ -7,6 +7,7 @@ steps:
   pull: true
   commands:
     - kubectl get pods # replace with your desired commands.
+    - kubectl get nodes -o wide
   environment:
     PLUGIN_IAM_ROLE_ARN: arn:aws:iam::633025986259:role/eks-role
     PLUGIN_EKS_CLUSTER: eks-cluster
