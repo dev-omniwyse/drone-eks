@@ -3,7 +3,7 @@ type: docker
 name: default
 steps:
 - name: do-something-with-kubectl
-  image: drone-eks-plugin:latest
+  image: caian/drone-eks-plugin
   pull: true
   commands:
     - kubectl get pods # replace with your desired commands.
